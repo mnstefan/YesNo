@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<title>Yes/No</title>	
+	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+	<script type="text/javascript">
+		google.load("jquery", "1.6.4");
+		google.load("jqueryui", "1.8.16");
+	</script>
+
+	
+    <!-- Stylesheets -->
+
+    <!-- Scripts -->
+	
+	
+	<link rel="stylesheet" type="text/css" href="css/yesno.css"/>
+	<script type="text/javascript" src="js/yesno.js"></script>
+	
+	<style>
+		.container{
+			width:600px;
+			margin:auto;
+			padding:200px 40px;
+		}
+	</style>
+	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#test").yesno({
+				"checkedText": "Hey"
+			});
+			$("#test").yesno("uncheck");
+			
+		})
+	</script>
+		
+</head>
+<body>
+<div class="container">
+	<input type="checkbox" id="test" checked="checked"/>
+</div>
+	
+</body>
+</html>
