@@ -4,16 +4,16 @@ YesNo is a jquery plugin that replace a html checkbox with a basic "yes/no" swit
 
 - Import the pugin and the css file
 
-  <link rel="stylesheet" type="text/css" href="css/yesno.css"/>
-  <script type="text/javascript" src="js/yesno.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/yesno.css"/>
+	<script type="text/javascript" src="js/yesno.js"></script>
 
 - Active the plugin 
-  
-  $(document).ready(function(){
+	
+	$(document).ready(function(){
   		$("#test").yesno({
-				"checkedText": "Yup"
-        "uncheckedText": "Nope"
-			});
+			"checkedText": "Yup"
+        		"uncheckedText": "Nope"
+		});
 	});
 
 
@@ -21,17 +21,17 @@ YesNo is a jquery plugin that replace a html checkbox with a basic "yes/no" swit
 *** API ***
 
 - Options
-  
-  "checkedText" - default: "yes"
-  "uncheckedText" - default: "no"
+	
+	"checkedText" - default: "yes"
+	"uncheckedText" - default: "no"
 
 - Methods
 
-  check - switch state to checked
-  uncheck - switch state to unchecked
+	check - switch state to checked
+	uncheck - switch state to unchecked
 
-  Es. $("#test").yesno("check");
+	Es. $("#test").yesno("check");
 
 *** APPEARANCE ***
-
-You can edit the css file (yesno.css) to change the plugin appearance.
+	
+	You can edit the css file (yesno.css) to change the plugin appearance.
