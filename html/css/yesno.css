@@ -8,7 +8,6 @@
 .yesno ul {
     background: none repeat scroll 0 0 #EEEEEE;
     border: 1px solid #CCCCCC;
-    border-radius: 3px 3px 3px 3px;
     float: left;
     list-style: none outside none;
     margin: 0;
@@ -36,12 +35,12 @@
     color: #666666;
     opacity: 1;
     background: #f7f7f7; /* Old browsers */
-    background: -moz-linear-gradient(top, #ffffff 0%, #ededed 89%, #dddddd 97%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(89%,#ededed), color-stop(97%,#dddddd)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #ffffff 0%,#ededed 89%,#dddddd 97%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #ffffff 0%,#ededed 89%,#dddddd 97%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #ffffff 0%,#ededed 89%,#dddddd 97%); /* IE10+ */
-    background: linear-gradient(top, #ffffff 0%,#ededed 89%,#dddddd 97%); /* W3C */
+    background: -moz-linear-gradient(top, #ffffff 0%, #fff 90%, #ccc 97%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(90%,#fff), color-stop(97%,#ccc)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #fff 0%, #fff 90%, #CCC 97%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #fff 0%, #fff 90%, #CCC 97%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #fff 0%, #fff 90%,#CCC 97%); /* IE10+ */
+    background: linear-gradient(top, #fff 0%, #fff 90%,#CCC 97%); /* W3C */
 }
 .yesno ul li.yes .dot {
     left: -12px;
@@ -63,5 +62,29 @@
     border-left: 1px solid #CCCCCC;
 }
 .yesno ul li.no.active .dot {
+    background: none repeat scroll 0 0 #FEBF01;
+}
+
+.yesno.all ul li{
+	background:#fff;
+	color:#999;
+}
+.yesno.all ul li.yes{
+	border-right:1px solid #ddd;
+}
+.yesno.all ul li.no{
+	border-left:1px solid #ddd;
+}
+
+
+.yesno.all ul li:hover{
+	color:#666;
+}
+
+.yesno.all ul li.yes .dot {
+    background: none repeat scroll 0 0 green;
+}
+
+.yesno.all ul li.no .dot {
     background: none repeat scroll 0 0 #FEBF01;
 }
