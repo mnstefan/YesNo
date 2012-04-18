@@ -1,32 +1,25 @@
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-	<title>Yes/No</title>	
-	<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>YesNo by mnstefan</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/yesno.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <script src="javascripts/yesno.js"></script>
+    
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	
 	<script type="text/javascript">
 		google.load("jquery", "1.6.4");
 		google.load("jqueryui", "1.8.16");
 	</script>
-
-	
-    <!-- Stylesheets -->
-
-    <!-- Scripts -->
-	
-	
-	<link rel="stylesheet" type="text/css" href="css/yesno.css"/>
-	<script type="text/javascript" src="js/yesno.js"></script>
-	
-	<style>
-		.container{
-			width:600px;
-			margin:auto;
-			padding:200px 40px;
-		}
-	</style>
-	<!--[if lt IE 9]><script type="text/javascript" src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 	
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -37,12 +30,81 @@
 			
 		})
 	</script>
-		
-</head>
-<body>
-<div class="container">
-	<input type="checkbox" id="test" checked="checked"/>
-</div>
-	
-</body>
+  </head>
+  <body>
+
+      <header>
+        <h1>YesNo</h1>
+        <p>A very basic jQuery plugin that replaces a checkbox input with a &quot;yes/no&quot; switch</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/mnstefan/YesNo" class="button fork"><strong>Fork On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/mnstefan/YesNo/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/mnstefan/YesNo/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <h3>YesNo is a jquery plugin that replace a html checkbox with a basic "yes/no" switch.</h3>
+<h1>DEMO</h1>
+<input type="checkbox" id="test" checked="checked"/>
+
+<h1>USAGE</h1>
+
+<h3>Import the pugin and the css file</h3>
+
+<pre><code>&lt;link rel="stylesheet" type="text/css" href="css/yesno.css"/&gt;
+&lt;script type="text/javascript" src="js/yesno.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<h3>Activate the plugin</h3>
+
+<pre><code>$(document).ready(function(){
+$("#test").yesno({
+    "checkedText": "Yup"
+        "uncheckedText": "Nope"
+});
+});
+</code></pre>
+
+<h1>DOCUMENTION</h1>
+
+<h3>Options</h3>
+
+<pre><code>"checkedText" - default: "yes"
+"uncheckedText" - default: "no"
+</code></pre>
+
+<h3>Methods</h3>
+
+<pre><code>check - switch state to checked
+uncheck - switch state to unchecked
+
+Es. $("#test").yesno("check");
+</code></pre>
+
+<h1>APPEARANCE</h1>
+
+<p>You can edit the css file (yesno.css) to change the plugin appearance.</p>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/mnstefan">mnstefan</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
 </html>
